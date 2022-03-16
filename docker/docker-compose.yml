@@ -14,7 +14,7 @@ services:
   spring:
     container_name: springapp
     restart: always
-    image: gestionScolaire:latest
+    image: gestionscolaire:latest
     environment:
       SPRING_DATASOURCE_URL: jdbc:mysql://docker-mysql/gestionscolaire?useSSL=false&allowPublicKeyRetrieval=true
       SPRING_DATASOURCE_USERNAME: spring

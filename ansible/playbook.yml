@@ -41,7 +41,7 @@
     - name: build docker image
       become: true
       shell:
-        cmd: "sudo docker build -t gestionScolaire:latest --no-cache . -f /home/ubuntu/gestionScolaire/docker/Dockerfile"
+        cmd: "sudo docker build -t gestionscolaire:latest --no-cache . -f /home/ubuntu/gestionScolaire/docker/Dockerfile"
 
 
     - name: Run container
