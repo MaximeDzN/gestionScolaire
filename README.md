@@ -19,6 +19,13 @@ Dans un premier temps, j'ai réalisé divers diagrammes UML.
 ### Diagramme de classe
 
 ---
+## Couverture de code
+
+Une couverture de code de 80% était demandé. Voici une image montrant l'état de couverture de l'application
+![CODE_COVERAGE](https://github.com/asemin08/GestionGlasses-terraform/blob/main/readme_img/coverage.png)
+
+
+---
 
 ## Déploiement de l'application
 
