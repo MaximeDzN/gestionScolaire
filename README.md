@@ -60,3 +60,10 @@ aws_secret_access_key = "Secret access key"
 login: directeur
 mot de passe: directeur
 ```
+
+---
+
+## conclusion
+
+Il est possible de déployer l'application avec terraform. Cependant il aurait dû être possible selon l'énoncé d'inclure Jenkins. Par manque de temps je n'ai pas pu ajouter cette brique 
+De plus j'ai rencontré certaines difficultés sur des tests. Pour améliorer ces deux points j'estime qu'il me faudrait une demi-journée supplémentaires.
