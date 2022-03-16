@@ -41,11 +41,11 @@ Une couverture de code de 80% était demandé. Voici une image montrant l'état 
 2. Une fois terraform installé, vous devrez télécharger ce dépôt git.
 3. Vous devrez ensuite vous rendre dans le dossier gestionScolaire/terraform
 4. Créez un dossier .aws
-5. Déposez un fichier "credentials" contenant les informations de connexion AWS créée plus tôt.
+5. Déposez un fichier "credentials" contenant les informations de connexion AWS ([voir ce lien](https://docs.aws.amazon.com/fr_fr/IAM/latest/UserGuide/id_credentials_access-keys.html#Using_CreateAccessKey)).
 ```sh
 [default]
 aws_access_key_id = "Access key id"
 aws_secret_access_key = "Secret access key"
 ```
-6. déplacer dans ce même dossier la clé .pem que vous avez créée plus tôt et nommez la `usKey.pem` .
+6. déplacer dans ce même dossier la clé .pem que vous pouvez créez comme montre [ici](https://docs.aws.amazon.com/fr_fr/AWSEC2/latest/UserGuide/ec2-key-pairs.html#having-ec2-create-your-key-pair) et nommez la `usKey.pem`. ATTENTION ! Veillez bien à créer la clé dans la région us-east-1 !
 7. 
