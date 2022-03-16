@@ -16,6 +16,7 @@ import java.util.List;
 @NoArgsConstructor
 public class Student extends PhysicPerson {
 
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date birthDate;
 
     @ManyToMany

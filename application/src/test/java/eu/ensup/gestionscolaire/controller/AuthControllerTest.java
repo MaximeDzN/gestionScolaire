@@ -7,6 +7,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.web.servlet.MockMvc;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestPostProcessors.user;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.redirectedUrl;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
@@ -29,6 +30,11 @@ class AuthControllerTest {
     @Test
     void viewLoginPage() throws Exception {
         mockMvc.perform(get("/login")).andExpect(status().isOk());
+    }
+
+    @Test
+    void viewLoginPageConnected() throws Exception {
+        mockMvc.perform(get("/login").with(user("user").roles("DIR"))).andExpect(status().is3xxRedirection());
     }
 
     @Test

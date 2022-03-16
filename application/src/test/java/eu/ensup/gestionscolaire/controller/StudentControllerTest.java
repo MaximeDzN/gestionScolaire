@@ -49,7 +49,7 @@ class StudentControllerTest {
     void createStudent() throws Exception {
         Student fakeStudent = new Student(0L,"dazin","14 rue chèvre","0612401108","maxime.dazin@gmail.com","maxime", new Date());
         //when(studentRepository.save(any())).thenReturn(fakeStudent);
-        mockMvc.perform(post("/student").with(user("user").roles("DIR")).content(asJsonString(fakeStudent))).andExpect(status().is3xxRedirection());
+        mockMvc.perform(post("/student").with(user("user").roles("DIR")).content(asJsonString(fakeStudent))).andExpect(status().isOk());
         //verify(studentRepository,times(1)).save(any());
     }
 

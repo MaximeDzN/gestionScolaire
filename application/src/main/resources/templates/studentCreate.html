@@ -8,6 +8,7 @@
 <body>
 <div th:replace="~{fragments/header :: header}"></div>
 <div class="container">
+    <span class="text-success" th:text="${session.info}"></span>
     <form th:action="@{'/student'}" th:object="${studentForm}" method="post">
         <div class="form-group">
             <label for="name">Nom</label>
@@ -33,7 +34,6 @@
             <label for="phone">téléphone</label>
             <input type="text" class="form-control" id="phone" name="phone">
         </div>
-
         <button type="submit" class="btn btn-primary">Envoyer</button>
     </form>
 </div>

@@ -11,6 +11,9 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
 
 @Controller
 @RequestMapping("student")
@@ -26,9 +29,10 @@ public class StudentController {
     }
 
     @PostMapping
-    public String createStudent(@ModelAttribute("studentForm") final Student student){
+    public String createStudent(@ModelAttribute("studentForm") final Student student, HttpSession session){
         studentRepository.save(student);
-        return "redirect:/home";
+        session.setAttribute("info","étudiant créé avec succès");
+        return "studentCreate";
     }
 
 }
