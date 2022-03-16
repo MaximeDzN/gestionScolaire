@@ -41,7 +41,7 @@ Une couverture de code de 80% était demandé. Voici une image montrant l'état 
 2. Une fois terraform installé, vous devrez télécharger ce dépôt git.
 3. Vous devrez ensuite vous rendre dans le dossier gestionScolaire/terraform
 4. Créez un dossier .aws
-5. Déposez un fichier "credentials" contenant les informations de connexion AWS ([voir ce lien](https://docs.aws.amazon.com/fr_fr/IAM/latest/UserGuide/id_credentials_access-keys.html#Using_CreateAccessKey)).
+5. Créez un fichier "credentials" contenant les informations de connexion AWS ([voir ce lien](https://docs.aws.amazon.com/fr_fr/IAM/latest/UserGuide/id_credentials_access-keys.html#Using_CreateAccessKey)).
 ```sh
 [default]
 aws_access_key_id = "Access key id"
