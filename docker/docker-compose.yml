@@ -1,0 +1,26 @@
+version: '3.3'
+services:
+  docker-mysql:
+    image: mysql:8.0
+    container_name: docker-mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: gestionscolaire
+      MYSQL_USER: spring
+      MYSQL_PASSWORD: spring
+    ports:
+      - "3306:3306"
+  spring:
+    container_name: springapp
+    restart: always
+    image: gestionScolaire:latest
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://docker-mysql/gestionscolaire?useSSL=false&allowPublicKeyRetrieval=true
+      SPRING_DATASOURCE_USERNAME: spring
+      SPRING_DATASOURCE_PASSWORD: spring
+      SPRING_PORT: 8080
+    ports:
+      - "8080:8080"
+    depends_on:
+      - docker-mysql
