@@ -47,7 +47,7 @@ Une couverture de code de 80% était demandé. Voici une image montrant l'état 
 aws_access_key_id = "Access key id"
 aws_secret_access_key = "Secret access key"
 ```
-6. Déplacer dans ce même dossier la clé .pem que vous pouvez créez comme montre [ici](https://docs.aws.amazon.com/fr_fr/AWSEC2/latest/UserGuide/ec2-key-pairs.html#having-ec2-create-your-key-pair) et nommez la `usKey.pem`. ATTENTION ! Veillez bien à créer la clé dans la région **us-east-1** !
+6. Déplacer dans ce même dossier la clé .pem que vous pouvez créez comme expliqué [ici](https://docs.aws.amazon.com/fr_fr/AWSEC2/latest/UserGuide/ec2-key-pairs.html#having-ec2-create-your-key-pair) et nommez la `usKey.pem`. ATTENTION ! Veillez bien à créer la clé dans la région **us-east-1** !
 7. Rendez-vous dans le dossier gestionScolaire/terraform/app.
 8. Ouvrez un invité de commande à cet emplacement.
 9. Lancez la commande `terraform init` pour initialiser le projet.
