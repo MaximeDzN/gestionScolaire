@@ -12,17 +12,25 @@ Dans un premier temps, j'ai réalisé divers diagrammes UML.
 
 ### Diagramme de cas d'utilisation
 
+![USECASE](https://github.com/MaximeDzN/gestionScolaire/blob/main/conception/Diagramme%20de%20cas%20d'utilisation/usecase.png)
+
 ### Diagrammes de séquence
+
+[Répertoire](https://github.com/MaximeDzN/gestionScolaire/tree/main/conception/Diagrammes%20de%20s%C3%A9quence)
 
 ### Diagrammes d'activité
 
+[Répertoire](https://github.com/MaximeDzN/gestionScolaire/tree/main/conception/Diagrammes%20d'activit%C3%A9s)
+
 ### Diagramme de classe
+
+![CLASS](https://github.com/MaximeDzN/gestionScolaire/blob/main/conception/Diagramme%20de%20classe/class.png)
 
 ---
 ## Couverture de code
 
 Une couverture de code de 80% était demandé. Voici une image montrant l'état de couverture de l'application
-![CODE_COVERAGE](https://github.com/asemin08/GestionGlasses-terraform/blob/main/readme_img/coverage.png)
+![Répertoire](https://github.com/MaximeDzN/gestionScolaire/blob/main/readme_img/coverage.png)
 
 
 ---
