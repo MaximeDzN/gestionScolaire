@@ -26,9 +26,11 @@ Dans un premier temps, j'ai réalisé divers diagrammes UML.
 2. Une fois terraform installé, vous devrez télécharger ce dépôt git.
 3. Vous devrez ensuite vous rendre dans le dossier gestionScolaire/terraform
 4. Créez un dossier .aws
-5. Déposez un fichier "credentials" contenant les informations de connexion AWS créés plus tôt.
+5. Déposez un fichier "credentials" contenant les informations de connexion AWS créée plus tôt.
 ```sh
 [default]
-aws_access_key_id = "Acces key id"
+aws_access_key_id = "Access key id"
 aws_secret_access_key = "Secret access key"
 ```
+6. déplacer dans ce même dossier la clé .pem que vous avez créée plus tôt et nommez la `usKey.pem` .
+7. 
